@@ -69,3 +69,15 @@ button, html [type=button], [type=reset], [type=submit] {
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+@media (max-width: 1299px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

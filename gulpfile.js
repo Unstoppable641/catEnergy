@@ -1,4 +1,5 @@
 /*
+* <- CHANGE SERVER(:34) BEFORE START ->
 * npm init
 * npm install --save-dev gulp gulp-sass browser-sync gulp-autoprefixer gulp-cache gulp-clean-css gulp-rimraf gulp-rename gulp-rigger gulp-uglify gulp-rename gulp-image
 * */
@@ -34,7 +35,7 @@ const config = {
     // server: {
     //     baseDir: './build'
     // },
-    proxy: "catEnergy.local/build/", // для лок сервера, чтобы php браузерСинком отслеживать
+    proxy: "catEnergy.local/build/", // для лок сервера
     notify: false
 };
 
