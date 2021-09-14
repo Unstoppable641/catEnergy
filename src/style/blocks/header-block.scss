@@ -1,0 +1,131 @@
+.header-block {
+  padding-top: 144px;
+  padding-bottom: 0;
+  background-image: url(../img/index-header-bg.jpg);
+  background-position: calc(100% + 10px) 0;
+  background-repeat: no-repeat;
+  background-size: 680px 696px;
+
+  &-wrap {
+    height: 602px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .header-title {
+      font-size: 60px;
+      line-height: 60px;
+      max-width: 449px;
+      font-weight: 400;
+      order: 1;
+      margin-top: 79px;
+      margin-bottom: 40px;
+      color: $textdark;
+    }
+
+    .header-text {
+      order: 2;
+      margin-bottom: 53px;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $textdark;
+    }
+
+    .header-img {
+      order: 4;
+      display: inline-block;
+      width: 550px;
+      margin-left: -301px;
+      margin-top: -1px;
+    }
+
+    .header-button {
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 244px;
+      order: 3;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header-block {
+    background-image: url(../img/header-table.jpg);
+    background-position: 30px 341px;
+    background-size: 709px 609px;
+    padding: 52px 0 367px;
+  }
+
+  .header-block-wrap .header-img {
+    display: none;
+  }
+
+  .header-block-wrap {
+    padding-left: 89px;
+  }
+
+  .header-block-wrap .header-title {
+    margin-top: 89px;
+  }
+
+  .header-block-wrap .header-button {
+    width: 247px;
+    padding-top: 19px;
+  }
+
+  .header-block-wrap .header-text {
+    margin-bottom: 49px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-block-wrap .header-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 39px;
+    text-align: center;
+    margin-bottom: 26px;
+    color: #fff;
+  }
+
+  .header-block-wrap {
+    padding-left: 0px;
+    height: auto;
+  }
+
+  .header-block {
+    padding: 52px 0 7px;
+    background-size: 100% 367px;
+    background-position: top;
+    background-image: url(../img/header-bg-mobile.jpg);
+  }
+
+  .header-block-wrap .header-text {
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .header-block-wrap .header-img {
+    display: block;
+    width: 300px;
+    margin-left: -20px;
+    margin-top: 29px;
+  }
+
+  .header-block-wrap .header-button {
+    order: 4;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 9px;
+    padding-top: 15px;
+  }
+}
